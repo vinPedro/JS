@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background: rgb(71, 164, 240);
+            color: white;
+            font: normal 1.2em arial, sans-serif;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg" name="msg">Clicle em mim</div>
+
+    <script>
+
+        var d = document.querySelector('div#msg'); //pegar por seletor CSS
+        //d.style.color = 'blue'; //altera a cor do texto da tag HTML
+
+        var nome = document.getElementsByName('msg')[0]; //pegar por nome
+
+        var msg = document.getElementById('msg'); //pegar por id
+
+        nome.style.color = 'red';//innerHTML altera o conteúdo da tag HTML
+
+        msg.innerHTML = 'Clique aqui para ver o resultado'; //innerHTML altera o conteúdo da tag HTML
+
+        msg.innerText = 'Clique aqui para ver o resultado'; //innerText altera o conteúdo da tag HTML, mas não altera as tags HTML
+        
+        msg.style.background = 'blue'; //altera o background da tag HTML
+
+        document.body.style.background = 'rgb(71, 164, 240)';
+        var corpo = window.document.body
+        corpo.style.color = 'black';
+
+        var p1 = document.getElementsByTagName('p')[0]; //pegar por marcador de tag
+        p1.innerHTML = 'Aprendendo a usar <strong>DOM</strong> em JS';
+        p1.style.color = 'red';
+
+        document.write(p1.innerText +'<br>'); //innerText retorna o texto sem tags HTML
+        document.write(p1.innerHTML); //innerHTML retorna o texto com tags HTML
+
+        document.write('<h1>Iniciando Estudos com DOM</h1>');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: normal 1.1em Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+}
+
+header{
+    margin: 10px;
+}
+
+section{
+    color: black;
+    min-width: 340px;
+    width: 50vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.418);
+    padding: 10px;
+    
+}
+
+div#img img{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+}
+
+footer{
+    margin: 10px;
+    font-style: italic;
+}

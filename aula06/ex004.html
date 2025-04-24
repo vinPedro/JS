@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var nome = prompt("Qual é o seu nome?")
+        document.write(`Seu ${nome} tem  ${nome.length} letras <br>`)
+        document.write(`Seu ${nome} em Maiúsculas é  ${nome.toUpperCase()} <br>`)
+        document.write(`Seu ${nome} em Minúculas é  ${nome.toLowerCase()} <br>`)
+
+        /* 
+        Conversão de Number:
+        n1.toFixed(2) -> Arredonda o número para 2 casas decimais
+
+        n1.toFixed(2).replace('.', ',') -> Troca o ponto por vírgula
+
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) -> Formata o número para moeda brasileira
+
+        n1.toLocaleString('pt-BR', {style: 'percent'}) -> Formata o número para porcentagem
+
+        n1.toLocaleString('pt-BR', {style: 'decimal'}) -> Formata o número para decimal
+
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'usd'}) -> Formata o número para moeda americana
+
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'eur'}) -> Formata o número para moeda europeia
+
+        */
+
+        /*
+
+        5 == '5' -> true (comparação de valor)
+        5 === '5' -> false (comparação de valor e tipo)
+        5 === 5 -> true (comparação de valor e tipo)
+        5 !== '5' -> true (comparação de valor e tipo)
+        5 !== 5 -> false (comparação de valor e tipo)
+
+        ! -> negação (inverte o valor booleano)
+        !! -> negação dupla (converte o valor para booleano)
+        && -> e (retorna true se ambos os valores forem true)
+        || -> ou (retorna true se pelo menos um dos valores for true)
+
+        media >= 4 ? 'Aprovado' : 'Reprovado' -> operador ternário (se a média for maior ou igual a 4, retorna 'Aprovado', caso contrário, retorna 'Reprovado') - Posso atribuir valores a variáveis com o operador ternário
+
+        */ 
+    </script>
+
+</body>
+</html>

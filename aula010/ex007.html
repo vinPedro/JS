@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+        body {
+            font: normal 1.2em arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        input#iSomar{
+            margin: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Soma de Números: </h1>
+    <input type="number" name="num" id="inum"> +
+    <input type="number" name="num1" id="inum1"> 
+    <input type="button" value="Somar" id="iSomar" onclick="somar()"> 
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var num = document.getElementById('inum').value;
+            var num1 = document.getElementById('inum1').value;
+            var soma = Number(num) + Number(num1);
+
+            var res = document.getElementById('res');
+            res.innerHTML = `A soma de ${num} + ${num1} é igual a <strong>${soma}</strong>`;
+        }
+    </script>
+
+</body>
+</html>
