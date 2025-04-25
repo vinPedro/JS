@@ -1,4 +1,4 @@
-var vel = Number(prompt('Qual é a velocidade atual do carro?')) // Prompt para o usuário digitar a velocidade do carro
+var vel = 65 
 console.log(`A velocidade do seu carro é ${vel}km/h`)
 
 if (vel > 60) { // Condição simples
