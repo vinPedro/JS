@@ -1,0 +1,10 @@
+Continuar estudando:
+
+functions - o JavaScript é linguagem funcional, então existem inúmeras funções.
+OO - o JavaScript é linguagem orientada a objetos.
+Modularização - modularização, separar códigos.
+RegEx - expressões Regulares.
+JSON - estrutura dos dados.
+AJAX
+NodeJS 
+
